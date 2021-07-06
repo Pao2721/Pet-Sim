@@ -1,20 +1,26 @@
 //Variables------------------Variables---------------------Variables\\
-let happiness, hunger, winStatus, timer, petName, 
+let happiness = 2
+let hunger = 0
+let winStatus = false 
+let petName  = ""
 
 //Constants------------------Constants---------------------Constants\\
-const food = [apple,fish, chocolate ]
+const food = ["apple", "fish", "chocolate"]
 
 //Cached Elements------------Cached Elements---------------Cached Elements\\
-const musicBtn = document.getElementById('bgmusic')
-const messageEl = document.getElementById('message')
-const restartBtn = document.getElementById('restart')
+const musicBtn = document.getElementById("bgmusic")
+const messageEl = document.getElementById("message")
+const restartBtn = document.getElementById("restart")
+const foodBtn = document.getElementById("feed")
+const miniGame = document.getElementById("minigame")
 //Event Listeners------------Event Listeners---------------Event Listeners\\
- restartBtn.addEventListener('click', init)
- musicBtn.addEventListener('click', music)
+ restartBtn.addEventListener("click", init)
+ //musicBtn.addEventListener('click', music)
 
 //Functions------------------Functions---------------------Functions\\
 //Initializes the game
- function init() {
+
+function init() {
   winStatus = false
   happiness = 2
   hunger = 2
@@ -22,26 +28,33 @@ const restartBtn = document.getElementById('restart')
 }
 
  function render() {
-  if (gauge === 1) {
+  if (hunger === 1) {
     messageEl.innerText = `${PetName} is STARVING!!!`
-    } else if (gauge === 2) {
+    } else if (hunger === 2) {
       messageEl.innerText = `${PetName} is hungry.`
-    } else if (gauge === 3) {
+    } else if (hunger === 3) {
       messageEl.innerText = `${PetName} is not hungry right now.`
     } else {
      messageEl.innerText = `${PetName} is full and dosen't want to eat.`
     }
 }
  
-function hungerGauge(gauge) {
-  
+function feeding() {
+//  if(food === apple) {
+//    hunger + 1
+//  } else if (food === fish) {
+//    hunger + 1 
+//  } else if (food === chocolate) {
+//    happiness + 1
+//  }
 }
+feeding()
 
-function happyMeter (meter) {
-if(hungerGauge === 1) {meter -= 1}
-if(hungerGauge === 4) {meter += 1}
-if(miniScore < 3) {meter -= 2}
-if(miniScore < 4) {meter -= 1}
-if(miniScore > 6) {meter += 1}
-if(miniScore > 9) {meter += 2}
+function happyMeter () { 
+if(hunger === 1)  {happiness -= 1}
+if(hunger === 4)  {happiness += 1}
+if(miniScore < 3) {happiness -= 2}
+if(miniScore < 4) {happiness -= 1}
+if(miniScore > 6) {happiness += 1}
+if(miniScore > 9) {happiness += 2}
 }

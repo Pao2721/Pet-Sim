@@ -5,11 +5,12 @@
 
 body {
  box-sizing: border-box;
-	background: rgb(0,0,0);
-	border: 10px solid brown
+	background: rgb(99, 50, 50);
+	display: flex;
+	align-items: center
 } 
 
- #screen {
+ .screen {
 	width: 100px;
 	height: 100;
 	border: 5px solid black
@@ -23,15 +24,6 @@ div {
 }
 
 
-#bgMusic {
-	position: relative;
-	left: 70px;
-}
-
-#restart {
-	position: relative;
-	top: 35px
-}
 
 div {
 	text-align: center;
