@@ -1,11 +1,13 @@
 //Variables------------------Variables---------------------Variables\\
 let happiness = 2
+let maxHappiness = 10
 let hunger = 0
+let maxHunger = 4
 let winStatus = false 
 let petName  = ""
 
 //Constants------------------Constants---------------------Constants\\
-const food = ["apple", "fish", "chocolate"]
+
 
 //Cached Elements------------Cached Elements---------------Cached Elements\\
 const musicBtn = document.getElementById("bgmusic")
@@ -16,14 +18,19 @@ const miniGame = document.getElementById("minigame")
 //Event Listeners------------Event Listeners---------------Event Listeners\\
  restartBtn.addEventListener("click", init)
  //musicBtn.addEventListener('click', music)
+foodBtn.addEventListener("click",(e) =>  {
+  hunger += 1
+})
+
+
 
 //Functions------------------Functions---------------------Functions\\
 //Initializes the game
 
 function init() {
   winStatus = false
-  happiness = 2
-  hunger = 2
+  happiness = 0
+  hunger = 1
   render()
 }
 
@@ -46,9 +53,9 @@ function feeding() {
 //    hunger + 1 
 //  } else if (food === chocolate) {
 //    happiness + 1
-//  }
+//   }
 }
-feeding()
+
 
 function happyMeter () { 
 if(hunger === 1)  {happiness -= 1}
