@@ -46,15 +46,6 @@ function init() {
     }
 }
  
-function feeding() {
-//  if(food === apple) {
-//    hunger + 1
-//  } else if (food === fish) {
-//    hunger + 1 
-//  } else if (food === chocolate) {
-//    happiness + 1
-//   }
-}
 
 
 function happyMeter () { 
