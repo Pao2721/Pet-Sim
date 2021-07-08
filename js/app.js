@@ -1,5 +1,5 @@
 //Variables------------------Variables---------------------Variables\\
-let happiness = 6
+let happiness = 4
 let hunger = 1
 let winStatus = false 
 let petName  = "Don Dotmarco"
@@ -15,7 +15,7 @@ const messageEl = document.getElementById("message")
 const restartBtn = document.getElementById("restart")
 const foodBtn = document.getElementById("feed")
 const miniGame = document.getElementById("minigame")
-
+const Dotta = document.getElementById("dotty")
 
 //Event Listeners------------Event Listeners---------------Event Listeners\\
  restartBtn.addEventListener("click", init)
@@ -25,28 +25,28 @@ const miniGame = document.getElementById("minigame")
    hunger = hunger + 1, render()
 })
 //miniGame.addEventListener("click", (e) => {
-// 
+// hunger = hunger -1, minigame()
 // })
 // 
 // 
 /*----------Animation----------*/ 
 const dots = document.querySelector("#dotmarco")
 dots.classList.remove("animes")
-
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-  
-  const dott = entry.target.querySelector("dotmarco")
+ 
+ 
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   
+   const dott = entry.target.querySelector("dotmarco")
   if(entry.isIntersecting) {
-   dott.classList.add("dotmarco-anime")
-   return;
-    } 
-    dott.classList.remove("dotmarco-anime")
-  })
-}); 
-
-observer.observe(document.querySelector(".animes"))
+    dott.classList.add("dotmarco-anime")
+    return;
+       } 
+     dott.classList.remove("dotmarco-anime")
+   })
+ }); 
+ 
+ observer.observe(document.querySelector("#dotty"))
 
 
 
@@ -74,11 +74,13 @@ function init() {
     messageEl.innerText = `Don Dotmarco is STARVING!!!`
     } else if (hunger === 2) {
       messageEl.innerText = `Don Dotmarco is hungry.`
-      
+      Dotta.style.backgroundColor = "orange"
     } else if (hunger === 3) {
-      messageEl.innerText = `Don Dotmarco is not hungry right now.`
+      messageEl.innerText = "Don Dotmarco is not hungry right now."
+      Dotta.style.backgroundColor = "purple"
     } else {
-     messageEl.innerText = `Don Dotmarco is full and dosen't want to eat.`
+     messageEl.innerText = "Don Dotmarco is full and dosen't want to eat."
+     Dotta.style.backgroundColor = "blue"
     }
   
     if(hunger === 4 && happiness === 6) {
@@ -107,6 +109,8 @@ function happyMeter () {
   if(miniScore < 4) {happiness -= 1}
   if(miniScore > 6) {happiness += 1}
   if(miniScore > 9) {happiness += 2}
+
+  render()
 }
 
 
