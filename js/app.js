@@ -22,9 +22,11 @@ const miniGame = document.getElementById("minigame")
  foodBtn.addEventListener("click",(e) =>  {
    hunger = hunger + 1, render()
 })
-//miniGame.addEventListener("click", )
-
-
+//miniGame.addEventListener("click", (e) => {
+// 
+// })
+// 
+// 
 /*Functions------------------Functions---------------------Functions*/
 //Initializes the game
 init()
@@ -48,12 +50,16 @@ function init() {
     } else {
      messageEl.innerText = `Don Dotmarco is full and dosen't want to eat.`
     }
-
-    if(hunger === 4 && happiness== 6) {
+  
+    if(hunger === 4 && happiness === 6) {
       messageEl.innerText = `You've lived to dot another day`
     }
 
-  //if(hunger === 4)
+    if(hunger === 0) {
+      messageEl.innerText = `You somehow managed to kill a dot. Congratulations???`
+    }
+
+  
 }
  
 
