@@ -1,8 +1,6 @@
 //Variables------------------Variables---------------------Variables\\
 let happiness = 6
-let maxHappiness = 10
 let hunger = 1
-let maxHunger = 4
 let winStatus = false 
 let petName  = "Don Dotmarco"
 
@@ -11,10 +9,14 @@ let petName  = "Don Dotmarco"
 
 //Cached Elements------------Cached Elements---------------Cached Elements\\
 //const musicBtn = document.getElementById("bgmusic")
+
+const header = document.querySelector("h1")
 const messageEl = document.getElementById("message")
 const restartBtn = document.getElementById("restart")
 const foodBtn = document.getElementById("feed")
 const miniGame = document.getElementById("minigame")
+
+
 //Event Listeners------------Event Listeners---------------Event Listeners\\
  restartBtn.addEventListener("click", init)
  //musicBtn.addEventListener('click')
@@ -53,12 +55,18 @@ function init() {
   
     if(hunger === 4 && happiness === 6) {
       messageEl.innerText = `You've lived to dot another day`
+      header.innerText = `You Won!!`
     }
 
     if(hunger === 0) {
       messageEl.innerText = `You somehow managed to kill a dot. Congratulations???`
+      header.innerText = `(you lost)`
     }
 
+    if(happiness === 0) {
+      messageEl.innerText = `Don Dotmarco has left the building.`
+       header.innerText = `That's All Folks!!!`
+    }
   
 }
  
