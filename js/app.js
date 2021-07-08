@@ -1,5 +1,5 @@
 //Variables------------------Variables---------------------Variables\\
-let happiness = 2
+let happiness = 6
 let maxHappiness = 10
 let hunger = 1
 let maxHunger = 4
@@ -31,8 +31,8 @@ init()
 
 
 function init() {
-  winStatus = false
-  happiness = 0
+  winStatus = null
+  
   
   render()
 }
@@ -49,9 +49,14 @@ function init() {
      messageEl.innerText = `Don Dotmarco is full and dosen't want to eat.`
     }
 
+    if(hunger === 4 && happiness== 6) {
+      messageEl.innerText = `You've lived to dot another day`
+    }
+
   //if(hunger === 4)
 }
  
+
 
 function happyMeter () { 
   if(hunger === 1)  {happiness -= 1}
