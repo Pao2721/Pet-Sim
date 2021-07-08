@@ -29,6 +29,33 @@ const miniGame = document.getElementById("minigame")
 // })
 // 
 // 
+/*----------Animation----------*/ 
+const dots = document.querySelector("#dotmarco")
+dots.classList.remove("animes")
+
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+  
+  const dott = entry.target.querySelector("dotmarco")
+  if(entry.isIntersecting) {
+   dott.classList.add("dotmarco-anime")
+   return;
+    } 
+    dott.classList.remove("dotmarco-anime")
+  })
+}); 
+
+observer.observe(document.querySelector(".animes"))
+
+
+
+
+
+
+
+
+
 /*Functions------------------Functions---------------------Functions*/
 //Initializes the game
 init()

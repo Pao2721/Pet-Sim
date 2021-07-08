@@ -18,14 +18,42 @@ body {
 		margin-left: 12vw;
 	}
 
-	#dotmarco {
-		position: absolute;
-		;
+	#dotty {
+		position: relative;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   background-color:crimson;
 }
+
 div {
 	text-align: center;
 }
+
+@keyframes wipe-enter {
+	0% {
+			transform: scale(0, 0.25);
+	}
+	50% {
+			transform: scale(1, 0.25);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+		#dotmarco-anime {
+			animation-name: wipe-enter;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
