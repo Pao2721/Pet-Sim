@@ -74,6 +74,7 @@ function init() {
     messageEl.innerText = `Don Dotmarco is STARVING!!!`
     } else if (hunger === 2) {
       messageEl.innerText = `Don Dotmarco is hungry.`
+      
     } else if (hunger === 3) {
       messageEl.innerText = `Don Dotmarco is not hungry right now.`
     } else {
