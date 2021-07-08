@@ -19,19 +19,23 @@ body {
   height: 45px;
   border-radius: 100%;
   background-color:crimson;
-		animation: bootUp;
+		animation: move-the-circle 1s 1;
+		transform-origin: center;
 }
 
 div {
 	text-align: center;
 }
-
-@keyframes bootUp {
+       /*Animations*/
+@keyframes move-the-circle {
 	0% {
-			transform: scale(0, 0.25);
+			transform: translate(0, 0);
 	}
 	50% {
-			transform: scale(1, 0.25);
+			transform: translate(0, 50px);
+	}
+	100% {
+			transform: translate(0, 0);
 	}
 }
 
