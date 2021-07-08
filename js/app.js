@@ -18,7 +18,7 @@ const miniGame = document.getElementById("minigame")
 const Dotta = document.getElementById("dotty")
 
 //Event Listeners------------Event Listeners---------------Event Listeners\\
- restartBtn.addEventListener("click", init)
+ restartBtn.addEventListener("click", reInit)
  //musicBtn.addEventListener('click')
 
  foodBtn.addEventListener("click",(e) =>  {
@@ -68,6 +68,7 @@ function init() {
     }
   
     if(hunger === 4 && happiness === 6) {
+      winStatus = true
       messageEl.innerText = `You've lived to dot another day`
       header.innerText = `You Won!!`
     }
@@ -97,12 +98,20 @@ function happyMeter () {
   render()
 }
 
-
+function reInit () {
+   Program.restart();
+  if(restartBtn.onclick === true) {
+   happiness = 4
+   hunger = 1
+   winStatus = false 
+  messageEl.innerText = `Stats have been reset to default.`
+   }
+}
 
 
 /*To do's
   -restart button
   -minigame & minigame button
-  -background art(optional)
-  -
+  O-background art(optional)
+  -animations
 */

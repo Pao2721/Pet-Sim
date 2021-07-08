@@ -19,8 +19,10 @@ body {
   height: 45px;
   border-radius: 100%;
   background-color:crimson;
-		animation: move-the-circle 1s 1;
+		animation: move-the-circle 1s infinite;
+		animation-direction:normal, alternate;
 		transform-origin: center;
+
 }
 
 div {
@@ -39,11 +41,7 @@ div {
 	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-		#dotty-bootUp {
-			animation: bootUp 1s 1;
-		}
-}
+
 
 
 
