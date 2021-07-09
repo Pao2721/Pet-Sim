@@ -28,7 +28,7 @@ body {
 
 }
 .clicks {
-	border-radius: 50px;
+	border-radius: 13px;
 	background-color: rgb(30, 135, 210);
 	border-width: 4px;
 	font-size: large;
@@ -36,6 +36,24 @@ body {
 	margin: 7px 10px;
 }
 
+#restart {
+	border-radius: 13px;
+	background-color: rgb(189, 50, 154);
+	border-width: 4px;
+	font-size: large;
+	font-weight: 100;
+}
+h1 {
+	font-family: zen tokyo zoo;
+	color:rgb(209, 16, 16);
+	font-size: 70px;
+}
+
+h3 {
+font-family: cursive;
+font-size: large;
+color:floralwhite
+}
 div {
 	text-align: center;
 }

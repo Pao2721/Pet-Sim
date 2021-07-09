@@ -8,7 +8,7 @@ let petName  = "Don Dotmarco"
 
 //Cached Elements------------Cached Elements---------------Cached Elements\\
 //const musicBtn = document.getElementById("bgmusic")
-
+const Ignore = document.getElementById("ignore")
 const header = document.querySelector("h1")
 const messageEl = document.getElementById("message")
 const restartBtn = document.getElementById("restart")
@@ -21,14 +21,21 @@ const Dotta = document.getElementById("dotty")
  //musicBtn.addEventListener('click')
 
  foodBtn.addEventListener("click",(e) =>  {
-   hunger = hunger + 1, Init()
+   hunger = hunger + 2, 
+   happiness = happiness + 1,
+   Init()
 })
  Play.addEventListener("click",(e) => {
    hunger = hunger - 1,
    happiness = happiness + 1, 
    Init()
-   
  })
+
+ Ignore.addEventListener("click",(e) => {
+  hunger = hunger - 1,
+  happiness = happiness - 2, 
+  Init()
+})
 
 /*Functions------------------Functions---------------------Functions*/
 //Initializes the game
