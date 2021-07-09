@@ -99,13 +99,7 @@ function happyMeter () {
 }
 
 function reInit () {
-   Program.restart();
-  if(restartBtn.onclick === true) {
-   happiness = 4
-   hunger = 1
-   winStatus = false 
-  messageEl.innerText = `Stats have been reset to default.`
-   }
+   window.location.reload()
 }
 
 

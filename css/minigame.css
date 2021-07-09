@@ -16,7 +16,7 @@ dotmarco {
  position: relative;
  top: 150px;
 }
-.animate{
+.animated{
  animation: jump 500ms;
 }
 @keyframes jump {
