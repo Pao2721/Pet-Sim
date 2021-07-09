@@ -1,6 +1,6 @@
 //Variables------------------Variables---------------------Variables\\
-let happiness = 4
-let hunger = 1
+let happiness = 2
+let hunger = 2
 let petName  = "Don Dotmarco"
 
 //Constants------------------Constants---------------------Constants\\
