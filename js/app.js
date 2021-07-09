@@ -1,13 +1,11 @@
-//Variables------------------Variables---------------------Variables\\
+//------------------Variables---------------------\\
+//The Dots starting stats
 let happiness = 2
 let hunger = 2
-let petName  = "Don Dotmarco"
-
-//Constants------------------Constants---------------------Constants\\
 
 
-//Cached Elements------------Cached Elements---------------Cached Elements\\
-//const musicBtn = document.getElementById("bgmusic")
+
+//------------Cached Elements---------------\\
 const Ignore = document.getElementById("ignore")
 const header = document.querySelector("h1")
 const messageEl = document.getElementById("message")
@@ -16,10 +14,10 @@ const foodBtn = document.getElementById("feed")
 const Play = document.getElementById("play")
 const Dotta = document.getElementById("dotty")
 
-//Event Listeners------------Event Listeners---------------Event Listeners\\
+//------------Event Listeners---------------\\
+//Dictates what happens in the game when clicked
  restartBtn.addEventListener("click", reInit)
  //musicBtn.addEventListener('click')
-
  foodBtn.addEventListener("click",(e) =>  {
    hunger = hunger + 2, 
    happiness = happiness + 1,
@@ -45,7 +43,7 @@ Init()
 
 
  function Init() {
-  
+  //Changes properties of the dot depending on hunger & happiness
   if (hunger === 1) {
     messageEl.innerText = "Don Dotmarco is STARVING!!!"
     Dotta.style.backgroundColor = "crimson"
@@ -75,11 +73,12 @@ Init()
        messageEl.innerText = "Don Dotmarco is full and dosen't want to eat."
        Dotta.style.backgroundColor = "rgb(65,65,204)"
       } 
+      //Sets Win Coondition
   if(hunger === 4 && happiness === 6) {
       messageEl.innerText = "You've lived to dot another day."
       header.innerText = "You Won!!"
     }
-
+     //Sets Loss Conditions
   if(hunger === 0) {
       messageEl.innerText = "You somehow managed to kill a dot. Congratulations???"
       header.innerText = "(you lost)"
@@ -108,9 +107,3 @@ function reInit () {
 }
 
 
-/*To do's
-  -restart button
-  -minigame & minigame button
-  O-background art(optional)
-  -animations
-*/
