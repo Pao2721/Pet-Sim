@@ -6,7 +6,12 @@ INSTRUCTIONS<br>
 The game is played by feeding, playing with, and ignoring Don Dotmarco to manipulate the happiness and hunger meters. You win by getting the hunger to level 4 and happiness to level 6 at the same time. You lose if either one hits level 0.
 
 SCREENSHOTS(work in progress)
-<img src=>
+![image](https://user-images.githubusercontent.com/84666004/125083633-a1d8fa80-e096-11eb-8743-f995dcf8ec54.png)
+
+Dot Donmarco changes color depending on hunger and happiness.
+![image](https://user-images.githubusercontent.com/84666004/125083745-c2a15000-e096-11eb-8213-46bfcc58c45c.png)
+
+
 
 
 TECHNOLOGIES USED<br>
