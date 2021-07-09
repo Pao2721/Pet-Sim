@@ -15,10 +15,10 @@ HTML,<br>
 CSS<br>
 
 RESOURCES USED<br>
-coolcssanimations.com<br>
-developer.mozilla.org<br>
-1stwebdesinger.com<br>
-Background From deviantart.com<br>
+https://coolcssanimation.com/<br>
+https://developer.mozilla.org/en-US/<br>
+https://1stwebdesigner.com/<br>
+Background From https://deviantart.com<br>
 
 NEXT STEPS<br>
 Managing mulitple dots at the same time.<br>
