@@ -5,43 +5,47 @@
 }
 
 body {
-	display:block;
+	display: block;
 	align-items: center;
 	background-color: burlywood;
+	font-family: Georgia;
+	
 } 
 
  
 
 	#dotty {
 		position: relative;
-		left: 40vw;
+		left: 47vw;
 		top: 20vh;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   border-radius: 100%;
   background-color:crimson;
-		animation: move-the-circle 1s infinite;
+		animation: vertical-movement 1s ease-out infinite;
 		animation-direction:normal, alternate;
 		transform-origin: center;
 
+}
+.clicks {
+	border-radius: 50px;
+	background-color: rgb(30, 135, 210);
+	border-width: 4px;
+	font-size: large;
+	font-weight: 100;
+	margin: 7px 10px;
 }
 
 div {
 	text-align: center;
 }
        /*Animations*/
-@keyframes move-the-circle {
-	0% {
-			transform: translate(0, 0);
-	}
+@keyframes vertical-movement {
 	50% {
-			transform: translate(0, 50px);
+			transform: translate(0, 10px);
 	}
-	100% {
-			transform: translate(0, 0);
-	}
+	
 }
-
 
 
 
