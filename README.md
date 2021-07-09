@@ -15,7 +15,7 @@ Don Dotmarco changes color depending on hunger and happiness.
 
 
 WHAT I LEARNED<br>
-The most important thing I learned with this project is time management. Properly and efficiently using your time is key to creating a successful project. Being realistic about your goals is also very important.
+The most important thing I learned with this project is time management. Properly and efficiently using your time is key to creating a successful project. Being realistic about your goals is also very important. For example I wanted to add a minigame to play but it ended up being to much work.
 
 TECHNOLOGIES USED<br>
 Javascript,<br>
