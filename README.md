@@ -1,5 +1,5 @@
 # A Dot's Life
-GETTING STARTED<br>
+GETTING STARTED  https://pao2721.github.io/Pet-Sim/<br> 
 A pet simulator where you manage a dot's hunger and happiness. I chose this game because I used to enjoy playing the tamagotchi games as a kid. Also the concept interested me more than the others.
 
 INSTRUCTIONS<br>
